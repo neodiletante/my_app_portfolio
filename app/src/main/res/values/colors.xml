@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_button_app">#009688</color>
+    <color name="bg_button_my_app">#0091EA</color>
+    <color name="text_button_app">#EDF0F7</color>
+</resources>

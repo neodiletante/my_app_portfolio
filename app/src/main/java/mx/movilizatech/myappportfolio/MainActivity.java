@@ -1,10 +1,12 @@
 package mx.movilizatech.myappportfolio;
 
+import android.content.Context;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 
@@ -40,27 +42,15 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void spotifyButton(View view){
-        Toast.makeText(this, R.string.spotify, Toast.LENGTH_SHORT).show();
+    public void displayToast(View view){
+        Button button = (Button)view;
+        String buttonText = (String) button.getText();
+        Context context = getApplicationContext();
+        CharSequence text = getString(R.string.open_app) + " " +buttonText;
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context,text,duration);
+        toast.show();
     }
 
-    public void scoresButton(View view){
-        Toast.makeText(this,R.string.scores_app,Toast.LENGTH_SHORT).show();
-    }
 
-    public void libraryButton(View view){
-        Toast.makeText(this,R.string.library_app,Toast.LENGTH_SHORT).show();
-    }
-
-    public void buildItButton(View view){
-        Toast.makeText(this, R.string.build_it, Toast.LENGTH_SHORT).show();
-    }
-
-    public void baconButton(View view){
-        Toast.makeText(this, R.string.bacon_reader, Toast.LENGTH_SHORT).show();
-    }
-
-    public void capstoneButton(View view){
-        Toast.makeText(this,R.string.capstone,Toast.LENGTH_SHORT).show();
-    }
 }

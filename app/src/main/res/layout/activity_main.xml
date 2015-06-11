@@ -22,32 +22,32 @@
     <Button
         android:text="@string/spotify"
         style="@style/button_apps"
-        android:onClick="spotifyButton"
+        android:onClick="displayToast"
         />
     <Button
         android:text="@string/scores_app"
         style="@style/button_apps"
-        android:onClick="scoresButton"
+        android:onClick="displayToast"
         />
     <Button
         android:text="@string/library_app"
         style="@style/button_apps"
-        android:onClick="libraryButton"
+        android:onClick="displayToast"
         />
     <Button
         android:text="@string/build_it"
         style="@style/button_apps"
-        android:onClick="buildItButton"
+        android:onClick="displayToast"
         />
     <Button
         android:text="@string/bacon_reader"
         style="@style/button_apps"
-        android:onClick="baconButton"
+        android:onClick="displayToast"
         />
     <Button
         android:text="@string/capstone"
         style="@style/button_my_app"
-        android:onClick="capstoneButton"
+        android:onClick="displayToast"
         />
 
 
